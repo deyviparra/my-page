@@ -1,0 +1,41 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,ol {
+    list-style: none;
+}
+#ppal {
+    background-image: url("./img/background-ppal.png");
+    height: auto;
+}
+#cont {
+    display: flex;
+    justify-content: space-around;
+}
+#cont div{
+    height: 30px;
+    border: 2px solid black;
+    width: 50px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    margin: 10px 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+
+
+
