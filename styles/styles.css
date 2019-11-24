@@ -2,23 +2,75 @@
     border: 0px;
     margin: 0px;
     padding: 0px;
+    color: white;
 }
 
 ul,ol {
     list-style: none;
 }
 #ppal {
-    background-image: url("./img/background-ppal.png");
-    height: auto;
+    background-image: url("../img/background-ppal.png");
+    height: 900px;
+   
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #cont {
     display: flex;
     justify-content: space-around;
 }
-#cont div{
-    height: 30px;
-    border: 2px solid black;
-    width: 50px;
+#cont #b1{
+    
+    
+}
+#b1,#b2,#b3{
+    height: 400px;
+    border-radius: 15px;
+   
+    background-color: #333333;
+}
+#me{
+    margin-top: 300px;
+}
+
+#b1 .blo {
+    
+    position: sticky;
+    top: 200px;
+    background-image: url("../img/background-ppal.png");
+    background-size: 900%;
+    background-position-x: 16%;
+    background-position-y: 34.2%;
+    
+}
+#b2 .blo {
+    
+    position: sticky;
+    top: 200px;
+    background-image: url("../img/background-ppal.png");
+    background-size: 900%;
+    background-position-x: 50%;
+    background-position-y: 34.3%;
+   
+}
+#b3 .blo {
+    
+    position: sticky;
+    top: 200px;
+    background-image: url("../img/background-ppal.png");
+    background-size: 900%;
+    background-position-x: 84%;
+    background-position-y: 34.3%;
+    
+}
+.blo{
+    width: 150px;
+    height: 200px;
+}
+.bloque {
+    width: 150px;
+    
 }
 nav {
     display: flex;
