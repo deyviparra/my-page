@@ -11,7 +11,7 @@
   <body>
     <header>
       <nav>
-        <img id="logo" src="img/logo.png" alt="logo de Deyvi Parra" />
+        <img class="logo" src="img/logo.png" alt="logo de Deyvi Parra" />
         <ul>
           <li><a href="#me">Sobre mi</a></li>
           <li><a href="#skills">Mis habilidades con CSS</a></li>
@@ -20,39 +20,49 @@
         </ul>
       </nav>
     </header>
+    
+    <section id="me" class="me">
+    <h1>Muestra de habilidades de HTML y CSS</h1>
 
-    <section id="me">
-      <div class="center">
-        <h1>Bienvenido a mi muestra de habilidades de HTML y CSS</h1>
-        <img id="logo-css-html" src="img/css-html.png" alt="Logo CSS3" />
-
-        <p>
-          Vamos a empezar con la estructura basica y poco a poco le vamos a
-          añadir extras para hacerla más llamativa visualmente
-        </p>
-      </div>
-      <h2>Mi nombre es Deyvi Parra</h2>
-      <div id="deyvi">
-        <img src="img/deyvi.jpg" alt="Deyvi Parra desarrollador Full Stack" />
-        <p>
-          Tengo 24 años, soy estudiante de Desarrollo web Full Stack en Acamica.
-          <br />Estoy iniciando con los Frameworks más usados
-          actualmente,<strong> React</strong>, <strong> Angular</strong> y
-          <strong> Vue</strong> para complementar mis conocimientos y encontrar
-          un empleo como front end que puede aportar en el back end.
-        </p>
+      <div class="sec">
+        <div class="center tecnologias">
+          <img class="logo-css-html" src="img/css-html.png" alt="Logo CSS3" />
+        
+          <p>
+            Vamos a empezar con la estructura basica y poco a poco le vamos a
+            añadir extras para hacerla más llamativa visualmente
+          </p>
+        </div>
+        <div>
+          <div class="deyvi">
+            <img src="img/deyvi.jpg" alt="Deyvi Parra desarrollador Full Stack" />
+            <div>
+              <h2>Mi nombre es Deyvi Parra</h2>
+              <p>
+                Tengo 24 años, soy estudiante de Desarrollo web Full Stack en Acamica.
+                <br />Estoy iniciando con los Frameworks más usados
+                actualmente,<strong> React</strong>, <strong> Angular</strong> y
+                <strong> Vue</strong> para complementar mis conocimientos y encontrar
+                un empleo como front end que puede aportar en el back end.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="skills">
+    <div class="informacion">
+      <p>Aquí puedo poner información valiosa</p>
+    </div>
+    <section id="skills" class="skills">
       <h2>
         Aqui abajo verán algunas de las cosas "Cool" que puedo hacer con CSS
         puro
       </h2>
       <div class="f">
         <div id="floor-1">
-          <div class="float cuadro cuadro"></div>
-          <div class="float cuadro"></div>
-          <div class="float cuadro"></div>
+          <div class="float cuadro cuadro"><a href="cssejm/ejm1.html"></a></div>
+          <div class="float cuadro"><a href="cssejm/ejm2.html"></a></div>
+          <div class="float cuadro"><a href="cssejm/ejm3.html"></a></div>
         </div>
         <div id="floor-2">
           <div class="float cuadro"></div>
@@ -62,7 +72,7 @@
       </div>
     </section>
     <section id="proyects">
-      <h2>Aquí les dejo enlaces a otros proyectos donde usé HTML y CSS</h2>
+      <h2>Enlaces a otros proyectos donde usé HTML y CSS</h2>
 
       <div id="cont">
         <div class="proy">
@@ -102,7 +112,7 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="me contact">
       <h3>Contactame</h3>
       <p>
         Estas son los medios por los que me pueden contactar, a traves de éstos
