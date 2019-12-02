@@ -1,0 +1,11 @@
+.textbox{
+    display: flex;
+
+}
+.rec{
+    height: 75vh;
+    margin: 30px;
+    background: #333333;
+width: 50%;
+border-radius: 50px;
+}
