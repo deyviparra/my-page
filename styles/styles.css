@@ -1,3 +1,4 @@
+/*Declaraciones generales*/
 * {
   border: 0px;
   margin: 0px;
@@ -5,23 +6,44 @@
   color: rgb(255, 255, 255);
   font-family: "monserrat", Tahoma, Geneva, Verdana, sans-serif;
 }
-body {
-  background-color: #21d4fd;
-  background-image: linear-gradient(to left bottom, #03e033 10%,  #21d4fd );
-}
-header {
-  position: sticky;
-  -webkit-position: sticky;
-  top: 0px;
+ul,
+ol {
+  list-style: none;
 }
 h1 {
   text-align: center;
   font-size: 3rem;
   margin: 0px 0px 60px;
 }
-ul,
-ol {
-  list-style: none;
+h2 {
+  text-align: center;
+  margin: 20px 0px;
+}
+/*Aquí agrego un fondo al body y modifico la barra de scroll con los mismos colores*/
+body {
+  background-color: #21d4fd;
+  background-image: linear-gradient(to left bottom, #03e033 10%, #21d4fd);
+}
+/*Color de fondo de la barra*/
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: #333;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #03e234cc 0%, #21d5fdce 100%);
+  outline: 1px solid white;
+  border-radius: 10px;
+}
+/*Estilos de la barra de navegación*/
+header {
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0px;
 }
 nav {
   display: flex;
@@ -29,7 +51,7 @@ nav {
   padding: 10px 0px 10px;
   margin: 0px;
   align-items: center;
-  background: linear-gradient(to right,#444444,#1b1b1b);
+  background: linear-gradient(to right, #444444, #1b1b1b);
 }
 nav ul {
   display: flex;
@@ -41,40 +63,42 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
 }
-.me{
- display: flex;
- flex-flow: column;
-justify-content:center; 
-background: linear-gradient(to right,#444444,#1b1b1b);
-border-bottom-right-radius: 200px;
-min-height:84vh;
-}
-.sec{
-  display: flex;
-}
-.tecnologias{
-  display:flex;
-  flex-flow: column;
- align-items: center;
-}
-.tecnologias p{
-  margin-top:20px;
-  text-align: justify;
- width: 80%;
- font-size: 20px;
-}
 .logo {
   max-width: 200px;
 }
+/*Aqui empiezan las secciones*/
+/*La primera sección es la que tiene información sobre mi y sobre lo qeu quiero hacer en esta pagína*/
+.me {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background: linear-gradient(to right, #444444, #1b1b1b);
+  border-bottom-right-radius: 200px;
+  min-height: 84vh;
+}
+/*un div que contiene otros dos divs, esto para poner la informacion una al lado de la otra*/
+.sec {
+  display: flex;
+}
+.tecnologias {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.tecnologias p {
+  margin-top: 20px;
+  text-align: justify;
+  width: 60%;
+  font-size: 16px;
+}
+/*Clase para centrar el contenido*/
 .center {
   text-align: center;
   align-content: center;
 }
-
-.me .tecnologias{
+.me .tecnologias {
   min-width: 50%;
 }
-
 .logo-css-html {
   width: 200px;
   height: auto;
@@ -88,93 +112,92 @@ min-height:84vh;
 }
 .deyvi p {
   text-align: justify;
-  width: 80%
+  width: 80%;
 }
-.deyvi div h2{
+.deyvi div h2 {
   text-align: left;
 }
-
 .deyvi img {
   width: 30%;
   margin-right: 20px;
   border-radius: 50%;
 }
-.informacion{
-height: 60px;
+/*terminó sección sobre mi*/
+/*La informacion que está debajo en la franja de color*/
+.informacion {
+  height: 60px;
 }
-.informacion p{
+.informacion p {
   color: #333333;
-font-size: 24px;
-padding-left: 100px;
-margin: 30px 0px;
+  font-size: 24px;
+  padding-left: 100px;
+  margin: 30px 0px;
 }
-.informacion a{
+.informacion a {
   font-style: bold;
   color: #333333;
 }
-/*--- Aquí empiezan los estilos de la sección de muestra de habilidades*/
+/*-------Sección de muestra de habilidades-----------*/
 .skills {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  background:linear-gradient(to right,#444444,#1b1b1b);
+  background: linear-gradient(to right, #444444, #1b1b1b);
   padding: 0px 0px;
-  margin: 0px 0px 60px 20px;
+  margin: 0px 0px 60px 60px;
   min-height: 90vh;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.skills h2{
+.skills h2 {
   margin-top: 60px;
-}
-
-.float {
-  box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  width: 100%;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  -webkit-box-shadow: 10px 10px 15px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 15px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 15px -7px rgba(0, 0, 0, 0.75);
 }
 .cuadro {
   border-radius: 15px;
   padding: 30px 30px;
   width: 100%;
   height: 80px;
-  
 }
 .floor {
   display: flex;
   justify-content: space-around;
   margin: 30px 0px;
 }
-
+.floor a,
+.floor-2 a {
+  color: black;
+  width: 12%;
+}
+.floor div:hover {
+  border-right: 2px solid black;
+  -webkit-box-shadow: 4px 4px 11px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 11px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 11px 1px rgba(0, 0, 0, 0.75);
+}
+.floor div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*---------Seccion de proyectos----------*/
 .cont {
   display: flex;
   justify-content: space-around;
   margin: 60px 30px;
 }
 .proyects {
-  background:linear-gradient(to right,#444444,#1b1b1b);
+  background: linear-gradient(to right, #444444, #1b1b1b);
   padding: 60px 0px;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 60px 0px 0px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 .proyects h2 {
   color: white;
 }
-h2 {
-  text-align: center;
-  margin: 20px 0px;
-}
 .proy {
- 
   background-color: #21d4fd;
-  /*background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);*/
-  background-image: linear-gradient(220deg, #03e234cc 0%,  #21d5fdce 100%);
+  background-image: linear-gradient(220deg, #03e234cc 0%, #21d5fdce 100%);
   -webkit-box-shadow: inset 3px 3px 11px 1px rgba(0, 0, 0, 1);
   -moz-box-shadow: inset 3px 3px 11px 1px rgba(0, 0, 0, 1);
   box-shadow: inset 3px 3px 11px 1px rgba(0, 0, 0, 1);
@@ -209,19 +232,40 @@ h2 {
   -moz-box-shadow: 4px 4px 11px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 4px 11px 1px rgba(0, 0, 0, 0.75);
 }
+/*----- Sección de contacto-----*/
 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 60px;
+  min-height: 80vh;
+  background: #333333;
+  border-top-left-radius: 200px;
 }
-
-.floor a,.floor-2 a{
-  color: black;
-  width: 12%;
+.contact ul{
 }
-.floor div:hover {
-  -webkit-box-shadow: 4px 4px 11px 1px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 4px 4px 11px 1px rgba(255, 255, 255, 0.75);
-  box-shadow: 4px 4px 11px 1px rgba(255, 255, 255, 0.75);
+.contact ul li{
+  padding: 100px;
 }
-
-
+.contact div {
+ padding: 30px;
+}
+.contact ul{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-self: center;
+}
+.svg-inline--fa.fa-w-16 {
+  
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+}
+.svg-inline--fa.fa-w-14{
+  
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+}
 
