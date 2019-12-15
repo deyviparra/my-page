@@ -24,6 +24,12 @@ body {
   background-color: #21d4fd;
   background-image: linear-gradient(to left bottom, #03e033 10%, #21d4fd);
 }
+
+
+
+
+
+@media (min-width:768px){
 /*Color de fondo de la barra*/
 body::-webkit-scrollbar {
   width: 1em;
@@ -269,3 +275,4 @@ nav ul li a {
   margin: 15px;
 }
 
+}

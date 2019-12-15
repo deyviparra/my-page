@@ -13,9 +13,11 @@ justify-content: center;
 align-items: center;
 }
 .form{
+    
     position: relative;
     height: 50px;
     overflow: hidden;
+
 }
 .form input {
     width: 100%;
